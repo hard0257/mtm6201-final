@@ -1,0 +1,1119 @@
+/* These are the main colors I used for the whole website */
+:root {
+--green-header: #1DEB84;
+--green-body: #0ECC2A;
+}
+
+/* This hides the tablet design by default so it only shows when needed */
+.tablet-about {
+display: none;
+}
+
+/* This makes the skip link work for accessibility */
+.skip-link {
+position: absolute;
+top: -40px;
+left: 10px;
+background: black;
+color: white;
+padding: 8px 15px;
+z-index: 1000;
+}
+
+/* This shows the skip link when someone uses keyboard */
+.skip-link:focus {
+top: 10px;
+}
+
+/* Basic body styling for whole site */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: var(--green-body);
+text-align: center;
+}
+
+/* Header bar styling */
+.top-bar {
+background-color: var(--green-header);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+/* These lines match the black borders from the design */
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+
+/* Logo image size */
+.logo {
+height: 40px;
+}
+
+/* Website title text styling */
+.site-title {
+font-size: 32px;
+font-weight: bold;
+}
+
+/* Navigation links look clean and spaced */
+nav a {
+text-decoration: none;
+color: #000;
+font-size: 22px;
+margin-left: 20px;
+padding: 5px 15px;
+}
+
+/* Shows active page in green */
+nav a.active {
+background-color: #198754;
+color: #000;
+}
+
+/* Hero image full width like Figma */
+.hero img {
+width: 100%;
+height: auto;
+border-bottom: 2px solid black;
+}
+
+/* Dish images row layout */
+.dish-row {
+display: flex;
+justify-content: space-around;
+padding: 20px;
+}
+
+/* Dish image size */
+.dish-row img {
+width: 90px;
+}
+
+/* Welcome text area layout */
+.welcome {
+text-align: left;
+max-width: 800px;
+margin-left: auto;
+margin-right: 220px;
+padding: 10px;
+position: relative;
+}
+
+/* Stops horizontal scrolling */
+body {
+overflow-x: hidden;
+}
+
+/* Full width black line divider */
+.full-line {
+width: 100vw;
+height: 2px;
+background-color: black;
+margin-left: calc(-50vw + 50%);
+}
+
+/* Moves only welcome text, not the line */
+.welcome h2,
+.welcome p {
+padding-left: 20px;
+/* Gives small spacing from left */
+}
+
+/* Welcome heading size */
+.welcome h2 {
+font-size: 3rem;
+}
+
+/* Welcome paragraph size */
+.welcome p {
+font-size: 1.5rem;
+}
+
+/* Main button styling */
+.menu-btn {
+background-color: var(--green-header);
+padding: 20px 250px;
+font-size: 36px;
+text-decoration: none;
+color: black;
+display: inline-block;
+margin: 40px auto;
+}
+
+/* Button hover effect */
+.menu-btn:hover {
+background-color: #f8b5c1;
+/* Light pink on hover */
+color: black;
+}
+
+/* Menu page grid layout */
+.menu-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+padding: 30px;
+}
+
+/* Menu images size */
+.menu-item img {
+width: 100px;
+}
+
+/* Footer layout for social icons */
+.socials {
+display: flex;
+justify-content: space-between;
+/* Spreads icons evenly */
+align-items: center;
+background-color: #ffffff;
+padding: 20px 30px;
+width: 100%;
+/* Makes footer full width */
+box-sizing: border-box;
+}
+
+/* Social icon size */
+.socials img {
+width: 45px;
+margin: 0;
+/* Removes extra spacing */
+}
+
+/* Mobile layout adjustments */
+@media (max-width: 600px) {
+.menu-grid {
+grid-template-columns: 1fr;
+}
+
+/* Makes nav text smaller on phone */
+nav a {
+font-size: 16px;
+}
+}
+
+/* Tablet view footer fix */
+@media (max-width: 992px) {
+.socials {
+width: 100%;
+margin: 0;
+}
+}
+
+/* iPad grid layout */
+@media (min-width: 601px) and (max-width: 992px) {
+.menu-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/* Desktop grid layout */
+@media (min-width: 993px) {
+.menu-grid {
+grid-template-columns: repeat(4, 1fr);
+}
+}
+
+/* This is the green background for the submit page */
+.submit-page {
+background-color: #0ECC2A;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* This is the dark green box in the center */
+.submit-box {
+background-color: #2f7d32;
+padding: 60px;
+width: 70%;
+max-width: 700px;
+}
+
+/* This styles the main text on submit page */
+.submit-title {
+font-family: 'Pacifico', cursive;
+/* This is the same font used in the Figma */
+font-size: 96px;
+/* Big text size to match design */
+font-weight: 400;
+/* Regular font weight */
+line-height: 1.2;
+letter-spacing: 0%;
+color: black;
+text-align: center;
+}
+
+/* This styles the OK button */
+.ok-btn {
+font-size: 3rem;
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+/* This is the close X button in top right */
+.close-btn {
+position: absolute;
+top: 30px;
+right: 30px;
+background-color: #2f7d32;
+color: black;
+padding: 20px;
+text-decoration: none;
+font-size: 2rem;
+}
+
+/* these are the main green colors i used for the site */
+:root {
+--green-header: #1DEB84;
+--green-body: #0ECC2A;
+--dark-green-box: #2f7d32;
+}
+
+/* this controls the green background of the menu page */
+.menu-page {
+background-color: var(--green-body);
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+/* this styles the main title of the menu page */
+.menu-title-section h2 {
+font-size: 48px;
+font-weight: normal;
+color: black;
+margin-bottom: 10px;
+}
+
+/* this styles the booking form title */
+.booking-title {
+margin-left: 20px;
+margin-top: -20px;
+font-size: 18px;
+/* this moves the text a little bit to the side */
+}
+
+/* this styles the small subtitle text */
+.menu-subtitle {
+font-size: 24px;
+color: black;
+margin-top: 70px;
+/* this pushes the line a bit down */
+margin-bottom: 0;
+}
+
+/* this creates the full width black divider line */
+.full-line {
+width: 100vw;
+height: 2px;
+background-color: rgba(0, 0, 0, 0.4);
+/* this makes the line a little lighter than pure black */
+margin-left: calc(-50vw + 50%);
+
+position: relative;
+top: -10px;
+/* this moves the line slightly */
+}
+
+/* this styles subtitle spacing */
+.menu-subtitle {
+font-size: 22px;
+color: black;
+margin-bottom: 30px;
+}
+
+/* this styles the big image on the menu page */
+.menu-main-image {
+width: 60%;
+max-width: 700px;
+height: auto;
+border: 3px solid black;
+margin-bottom: 30px;
+}
+
+/* this is a black divider line */
+.menu-divider {
+height: 3px;
+background-color: black;
+width: 100%;
+margin: 20px 0 40px;
+}
+
+/* this styles the green boxes under the image */
+.menu-box {
+background-color: var(--dark-green-box);
+color: black;
+padding: 40px 20px;
+height: 200px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* this controls text inside the green boxes */
+.menu-box p {
+font-size: 40px;
+line-height: 1.2;
+font-weight: normal;
+}
+
+/* this moves and styles the booking form section */
+.booking-form-section {
+padding: 30px 60px;
+text-align: left;
+}
+
+/* this controls the width of the booking form */
+.booking-form {
+max-width: 800px;
+margin-left: 40px;
+/* this shifts the form slightly */
+}
+
+/* this keeps each label and input on one line */
+.form-row {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+
+/* this keeps labels lined up */
+.form-row label {
+width: 90px;
+margin-right: 10px;
+font-size: 18px;
+}
+
+/* this styles the text input fields */
+.form-input {
+width: 600px;
+padding: 10px;
+border: 3px solid black;
+}
+
+/* this styles the message text box */
+.form-textarea {
+width: 600px;
+height: 80px;
+padding: 10px;
+border: 3px solid black;
+resize: none;
+}
+
+/* this keeps the message row aligned */
+.message-row {
+display: flex;
+align-items: center;
+}
+
+/* this locks the message box size */
+.form-textarea {
+width: 600px;
+height: 80px;
+padding: 10px;
+border: 3px solid black;
+resize: none;
+flex-shrink: 0;
+}
+
+/* this styles the submit button */
+.menu-submit-btn {
+background-color: #2f7d32;
+color: white;
+padding: 10px 30px;
+font-size: 18px;
+border: none;
+
+margin-left: 200px;
+/* this pushes the button to the right */
+}
+
+/* this styles the hamburger menu icon */
+.hamburger-btn {
+font-size: 30px;
+background: none;
+border: none;
+cursor: pointer;
+display: none;
+}
+
+/* mobile screen styles */
+@media (max-width: 600px) {
+.menu-main-image {
+width: 90%;
+}
+
+.menu-box {
+height: auto;
+padding: 30px 10px;
+}
+
+.menu-box p {
+font-size: 28px;
+}
+
+.menu-submit-btn {
+float: none;
+width: 100%;
+}
+}
+
+/* tablet screen styles */
+@media (min-width: 601px) and (max-width: 992px) {
+.menu-main-image {
+width: 80%;
+}
+
+.menu-box p {
+font-size: 32px;
+}
+}
+
+/* desktop screen styles */
+@media (min-width: 993px) {
+.menu-main-image {
+width: 60%;
+}
+}
+
+/*People will see this green background on the about page */
+.about-page {
+background-color: var(--green-body);
+padding: 20px 0;
+}
+
+/*This controls how the "About us" title looks */
+.about-title h2 {
+text-align: center;
+font-size: 48px;
+font-weight: normal;
+color: black;
+margin: 50px 0;
+margin-top: -5px;
+/*This lifts the heading a bit upward */
+}
+
+/*This styles the main paragraph text under the title */
+.about-text {
+max-width: 960px;
+margin: -20px auto 30px auto;
+/*This negative margin helps reduce white gap */
+font-size: 28px;
+line-height: 1.3;
+color: black;
+text-align: left;
+padding: 0 20px;
+}
+
+/*This fixes extra spacing inside the paragraph */
+.about-text p {
+line-height: 1.5;
+/*Makes text clean and readable */
+margin: 0;
+/*Removes unwanted gaps */
+}
+
+/*This section places image and story text side by side */
+.our-story-section {
+display: flex;
+gap: 30px;
+padding: 40px 60px;
+align-items: flex-start;
+/*Keeps everything aligned nicely on top */
+}
+
+/*This adds black background behind story image */
+.story-box {
+background-color: black;
+padding: 20px;
+}
+
+/*Controls story image size */
+.story-image {
+width: 180px;
+}
+
+/* Controls size of Our Story heading */
+.story-text h3 {
+font-size: 36px;
+}
+
+/*This styles story paragraph */
+.story-text p {
+font-size: 22px;
+color: black;
+}
+
+/*This aligns and pushes story text to the right */
+.story-text {
+text-align: left;
+max-width: 1000px;
+margin-left: 100px;
+/*Pushes the text box a bit */
+}
+
+/*This handles the layout for reviews and sustainability */
+.reviews-sustainability {
+display: flex;
+justify-content: space-between;
+padding: 40px 60px;
+gap: 40px;
+}
+
+/*Puts reviews in horizontal row */
+.reviews-row {
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+margin-top: 20px;
+}
+
+/*Styles each review box */
+.review-item {
+text-align: center;
+max-width: 300px;
+}
+
+/*Makes review images round */
+.review-img {
+width: 90px;
+height: 90px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+
+/*Styles review text under images */
+.review-text {
+font-size: 22px;
+color: black;
+}
+
+/*Green box for sustainability section */
+.sustainability-box {
+background-color: var(--green-header);
+padding: 30px;
+max-width: 450px;
+}
+
+/*Sustainability title size */
+.sustainability-box h3 {
+font-size: 32px;
+}
+
+/*Sustainability paragraph size */
+.sustainability-box p {
+font-size: 20px;
+}
+
+/*Tablet and mobile responsive layout */
+@media (max-width: 768px) {
+.our-story-section,
+.reviews-sustainability {
+flex-direction: column;
+text-align: center;
+}
+
+/*Makes green box full width on small screens */
+.sustainability-box {
+max-width: 100%;
+}
+}
+
+/*On mobile, reviews stack vertically */
+@media (max-width: 768px) {
+.reviews-row {
+flex-direction: column;
+align-items: center;
+}
+}
+
+
+/*This section controls the hamburger menu for mobile and tablet */
+/*It hides desktop navigation and shows a full screen menu */
+
+/*Use Inter font for whole site */
+body {
+font-family: 'Inter', sans-serif;
+}
+
+/*Hamburger icon is hidden by default for desktop */
+.hamburger-btn {
+display: none;
+font-size: 30px;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+/*Show hamburger only on tablet and mobile */
+@media (max-width: 992px) {
+.hamburger-btn {
+display: block;
+}
+
+/*Hide the normal nav menu on small screens */
+.main-nav {
+display: none;
+}
+}
+
+/*On desktop keep normal navigation visible */
+@media (min-width: 993px) {
+.main-nav {
+display: flex;
+}
+
+/*Hide mobile menu completely on desktop */
+.mobile-menu {
+display: none !important;
+}
+}
+
+/*Full screen mobile menu background */
+.mobile-menu {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #0ECC2A;
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+}
+
+/* When menu opens, display the menu */
+.mobile-menu.active {
+display: flex;
+}
+
+/* Style for X close button */
+.close-btn {
+position: absolute;
+top: 20px;
+right: 20px;
+font-size: 18px;
+background: none;
+border: 1px solid black;
+padding: 5px 12px;
+cursor: pointer;
+}
+
+/* Links inside the mobile menu */
+.menu-link {
+background-color: #30873A;
+color: black;
+text-decoration: none;
+font-size: 20px;
+padding: 8px 30px;
+margin: 10px 0;
+}
+
+/* Smaller layout for very small phones */
+@media (max-width: 480px) {
+.menu-link {
+width: 140px;
+font-size: 16px;
+padding: 8px 20px;
+}
+}
+
+/* Tablet screen adjustment */
+@media (min-width: 481px) and (max-width: 992px) {
+.menu-link {
+width: 200px;
+font-size: 20px;
+padding: 12px 30px;
+}
+}
+
+/* Mobile fixes for home page layout */
+@media (max-width: 480px) {
+
+/* Header layout fixed for mobile */
+.top-bar {
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Smaller logo for mobile */
+.logo {
+height: 30px;
+}
+
+/* Smaller title text for mobile */
+.site-title {
+font-size: 20px;
+text-align: center;
+}
+
+/* Hero image full width on mobile */
+.hero img {
+width: 100%;
+height: auto;
+}
+
+/* Food icons layout on mobile */
+.dish-row {
+display: flex;
+justify-content: space-around;
+padding: 10px 0;
+}
+
+/*Food icon sizes on mobile */
+.dish-row img {
+width: 70px;
+height: 70px;
+object-fit: cover;
+}
+
+/* Fixes welcome text spacing on mobile */
+.welcome {
+text-align: left;
+margin: 0 auto;
+padding: 10px 20px;
+margin-right: 0;
+margin-left: 0;
+}
+
+/* Welcome heading style on mobile */
+.welcome h2 {
+font-size: 32px;
+text-align: left;
+margin-bottom: 10px;
+padding-left: 0;
+}
+
+/* Welcome paragraph style on mobile */
+.welcome p {
+font-size: 16px;
+line-height: 1.4;
+text-align: left;
+padding-left: 0;
+}
+
+/* Adjust menu button for mobile */
+.menu-btn {
+width: 90%;
+padding: 15px 0;
+font-size: 22px;
+text-align: center;
+}
+
+/* Footer icons fix for mobile */
+.socials {
+display: flex;
+justify-content: space-evenly;
+padding: 10px;
+}
+
+/* Footer icons size on mobile */
+.socials img {
+width: 30px;
+margin: 0;
+}
+}
+
+/* Mobile layout fixes for about page */
+@media (max-width: 480px) {
+
+/* Main about page padding */
+.about-page {
+padding: 10px 0;
+}
+
+/* Title sizing for mobile */
+.about-title h2 {
+font-size: 32px;
+text-align: center;
+margin: 10px 0;
+}
+
+/* Main paragraph styling on mobile */
+.about-text {
+font-size: 18px;
+line-height: 1.4;
+text-align: center;
+padding: 10px 20px;
+margin: 0;
+}
+
+/* Stack story section vertically */
+.our-story-section {
+flex-direction: column;
+padding: 20px 15px;
+text-align: center;
+gap: 10px;
+}
+
+/* Story title for mobile */
+.story-text h3 {
+font-size: 22px;
+text-align: center;
+}
+
+/* Story paragraph for mobile */
+.story-text p {
+font-size: 16px;
+text-align: center;
+}
+
+/* Sustainability box layout for mobile */
+.sustainability-box {
+max-width: 100%;
+padding: 20px;
+background-color: var(--green-header);
+text-align: center;
+}
+
+/* Sustainability title */
+.sustainability-box h3 {
+font-size: 22px;
+}
+
+/* Sustainability paragraph */
+.sustainability-box p {
+font-size: 16px;
+}
+
+/* Reviews and team section stacked on mobile */
+.reviews-sustainability {
+flex-direction: column;
+gap: 20px;
+padding: 20px 15px;
+}
+
+/* Reviews stacked */
+.reviews-row {
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+/* Review image size reduced */
+.review-img {
+width: 70px;
+height: 70px;
+}
+
+/*Review text size adjusted */
+.review-text {
+font-size: 16px;
+text-align: center;
+}
+}
+
+/*Mobile about sections hidden by default 
+*/
+.mobile-about {
+display: none;
+}
+
+/* Desktop about visible by default */
+.desktop-about {
+display: block;
+}
+
+/* Tablet and mobile text fixes */
+@media (max-width: 768px) {
+
+.mobile-about-text,
+.mobile-story p,
+.mobile-sustainability p {
+font-size: 16px;
+text-align: center;
+padding: 10px 20px;
+}
+
+/* Center headings for mobile */
+.mobile-story h3,
+.mobile-sustainability h3 {
+text-align: center;
+font-size: 20px;
+}
+
+/* Team and review boxes layout */
+.mobile-team-review {
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 20px;
+padding: 20px;
+}
+
+/* Team and review box styling */
+.team-box,
+.review-box {
+width: 160px;
+height: 160px;
+background-color: #1DEB84;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 16px;
+}
+}
+
+/* Force hide story image on mobile */
+@media (max-width: 768px) {
+
+.story-box {
+display: none !important;
+}
+
+.story-image {
+display: none !important;
+}
+}
+
+/* Align story text left on mobile */
+@media (max-width: 768px) {
+
+.story-text {
+text-align: left !important;
+margin: 0 20px;
+}
+
+.story-text h3 {
+text-align: left !important;
+}
+
+.story-text p {
+text-align: left !important;
+}
+}
+
+/* Mobile menu form fixes */
+@media (max-width: 600px) {
+
+/* Form container full width */
+.booking-form {
+max-width: 100%;
+margin: 0 15px;
+}
+
+/* Stack labels and inputs */
+.form-row {
+flex-direction: column;
+align-items: flex-start;
+}
+
+/* Labels auto width on mobile */
+.form-row label {
+width: auto;
+margin-bottom: 5px;
+}
+
+/* Inputs full width */
+.form-input,
+.form-textarea {
+width: 100%;
+box-sizing: border-box;
+}
+
+/* Submit button under textarea */
+.menu-submit-btn {
+margin-left: 0;
+margin-top: 10px;
+width: 100%;
+}
+}
+
+/* Mobile submit page layout fix */
+@media (max-width: 600px) {
+
+/* Submit box smaller on mobile */
+.submit-box {
+width: 90%;
+padding: 30px 20px;
+}
+
+/* Smaller title on small screens */
+.submit-title {
+font-size: 36px !important;
+line-height: 1.2;
+text-align: center;
+word-break: break-word;
+}
+
+/* Smaller OK button on mobile */
+.ok-btn {
+font-size: 24px;
+}
+}
+
+
+/* Tablet-only layout for the About page
+   This section runs only on iPad / tablet screen sizes */
+@media (min-width: 601px) and (max-width: 992px) {
+
+  /* Shows the special tablet version of the About section */
+  .tablet-about {
+    display: block;
+  }
+
+  /* Hides the normal desktop layout when tablet screen is active */
+  .our-story-section,
+  .reviews-sustainability,
+  .about-text {
+    display: none !important;
+  }
+
+  /* Layout for the two images at the top of tablet About page */
+  .tablet-images {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+
+  /* Image size and border styling on tablet */
+  .tablet-images img {
+    width: 45%;
+    border: 3px solid black;
+  }
+
+  /* Main paragraph text in tablet About section */
+  .tablet-about-text {
+    font-size: 20px;
+    text-align: left;
+    padding: 0 40px 20px 40px;
+  }
+
+  /* Grid layout for tablet story section */
+  .tablet-story-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 40px;
+    text-align: left;
+  }
+
+  /* Reviews arranged in a row for tablet view */
+  .tablet-reviews-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+
+  /* Individual review box styling */
+  .review-box {
+    width: 30%;
+    text-align: center;
+  }
+
+  /* Image style inside review box */
+  .review-box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+}
